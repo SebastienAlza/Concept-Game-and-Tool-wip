@@ -20,12 +20,12 @@ public class DebugPixel3DController : MonoBehaviour
 void Update()
 {
     int dx = 0, dz = 0;
-    if (Input.GetKey(KeyCode.LeftArrow))  dx = -1;
-    if (Input.GetKey(KeyCode.RightArrow)) dx = +1;
-    if (Input.GetKey(KeyCode.UpArrow))    dz = +1;
-    if (Input.GetKey(KeyCode.DownArrow))  dz = -1;
+		if (Input.GetKey(KeyCode.A)) dx = -1;
+		if (Input.GetKey(KeyCode.D)) dx = +1;
+		if (Input.GetKey(KeyCode.W)) dz = +1;
+		if (Input.GetKey(KeyCode.S)) dz = -1;
 
-    Vector3 move = new Vector3(dx, 0, dz) * moveSpeed;
+		Vector3 move = new Vector3(dx, 0, dz) * moveSpeed;
     cc.Move(move * Time.deltaTime);
 
     // rotation vers la direction
