@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: m_8bits
+  m_Name: m_8bitsDungeon
   m_Shader: {fileID: -6465566751694194690, guid: 7575675f5096de34d98d119b685433ad, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -46,7 +46,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 3decd4c3a22a0714da23792733a77277, type: 3}
+        m_Texture: {fileID: 2800000, guid: ba436beada4d70c4fa7aa8154a8dfb87, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _rt_8bits:
