@@ -1,81 +1,115 @@
 ﻿using UnityEngine;
 
 [ExecuteAlways]
-public class GetPosDisolve : MonoBehaviour
+public class GetPosDissolve : MonoBehaviour
 {
 	public Transform player;
 
 	[Header("Dissolve Settings")]
-	[Tooltip("Rayon de base (minimum)")]
 	public float baseRadius = 1f;
-	[Tooltip("Rayon maximal à atteindre en placement réussi")]
 	public float targetRadius = 3f;
-	[Tooltip("Vitesse de croissance du rayon (unités/sec)")]
 	public float growthSpeed = 1f;
+	public AnimationCurve growthCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
 	[Header("Bounce Settings")]
-	[Tooltip("Distance à partir de laquelle on commence le bounce")]
 	public float bounceTriggerDistance = 5f;
-	[Tooltip("Amplitude du bounce autour de baseRadius")]
 	public float bounceAmplitude = 0.5f;
-	[Tooltip("Vitesse du bounce (cycles/sec)")]
 	public float bounceSpeed = 2f;
+	[Tooltip("Vitesse à laquelle l'amplitude se rapproche de sa cible")]
+	public float amplitudeDampingSpeed = 1f;
 
 	[Header("Placement Zone")]
-	[Tooltip("Distance pour considérer la zone de bon placement")]
 	public float placementDistance = 2f;
 
-	// État interne
 	private enum State { Idle, Bouncing, Growing, Done }
 	private State _state = State.Idle;
+
 	private float _currentRadius;
+	private float _amplitudeCurrent;
+	private float _growthElapsed;
 
 	void OnEnable()
 	{
-		_currentRadius = baseRadius;
+		ResetAll();
+	}
+
+	void ResetAll()
+	{
 		_state = State.Idle;
+		_currentRadius = baseRadius;
+		_amplitudeCurrent = 0f;
+		_growthElapsed = 0f;
 	}
 
 	void Update()
 	{
-		if (player == null)
-			return;
-
+		if (player == null) return;
 		float dist = Vector3.Distance(player.position, transform.position);
 
 		switch (_state)
 		{
 			case State.Idle:
+				_currentRadius = baseRadius;
+				_amplitudeCurrent = 0f;
 				if (dist <= bounceTriggerDistance && dist > placementDistance)
+				{
 					_state = State.Bouncing;
+					// On démarre le bounce avec amplitude à 0 → il montera tout de suite
+					_amplitudeCurrent = 0f;
+				}
 				else if (dist <= placementDistance)
+				{
 					_state = State.Growing;
+					_growthElapsed = 0f;
+				}
 				break;
 
 			case State.Bouncing:
-				// effet sinusoidal autour de baseRadius
-				_currentRadius = baseRadius + Mathf.Sin(Time.time * Mathf.PI * 2f * bounceSpeed) * bounceAmplitude;
+				// On choisit la cible d'amplitude
+				float ampTarget = (dist <= bounceTriggerDistance && dist > placementDistance)
+								  ? bounceAmplitude
+								  : 0f;
+				// On lisse l'amplitude
+				_amplitudeCurrent = Mathf.MoveTowards(
+					_amplitudeCurrent,
+					ampTarget,
+					amplitudeDampingSpeed * Time.deltaTime
+				);
+				// Calcul du radius avec sinus
+				_currentRadius = baseRadius
+					+ Mathf.Sin(Time.time * Mathf.PI * 2f * bounceSpeed)
+					  * _amplitudeCurrent;
+
+				// Transitions
 				if (dist <= placementDistance)
-					_state = State.Growing;
-				else if (dist > bounceTriggerDistance)
 				{
+					_state = State.Growing;
+					_growthElapsed = 0f;
+				}
+				else if (_amplitudeCurrent <= 0f && dist > bounceTriggerDistance)
+				{
+					// Amplitude retombée à 0 et en dehors → plus de bounce
 					_state = State.Idle;
-					_currentRadius = baseRadius;
 				}
 				break;
 
 			case State.Growing:
-				// fait grandir le rayon vers targetRadius
-				_currentRadius = Mathf.MoveTowards(_currentRadius, targetRadius, growthSpeed * Time.deltaTime);
-				if (_currentRadius >= targetRadius)
+				// Durée pour aller de base→target à vitesse constante
+				float duration = (targetRadius - baseRadius) / growthSpeed;
+				_growthElapsed += Time.deltaTime;
+				float t = Mathf.Clamp01(_growthElapsed / duration);
+				// t non-lin via curve
+				float tCurve = growthCurve.Evaluate(t);
+				_currentRadius = Mathf.Lerp(baseRadius, targetRadius, tCurve);
+
+				if (t >= 1f)
 				{
-					_currentRadius = targetRadius;
 					_state = State.Done;
+					_currentRadius = targetRadius;
 				}
 				break;
 
 			case State.Done:
-				// reste bloqué à targetRadius
 				_currentRadius = targetRadius;
 				break;
 		}
@@ -83,19 +117,17 @@ public class GetPosDisolve : MonoBehaviour
 		// Applique au shader
 		Shader.SetGlobalVector("_wposDisolve", transform.position);
 		Shader.SetGlobalFloat("_radiusDisolve", _currentRadius);
-		Debug.Log(_currentRadius);
 	}
 
-	private void OnDrawGizmos()
+	void OnDrawGizmos()
 	{
-		// Rayon courant
-		Gizmos.color = new Color(1f, 0f, 0f, 0.5f);
+		Gizmos.color = new Color(1, 0, 0, 0.5f);
 		Gizmos.DrawWireSphere(transform.position, _currentRadius);
 
-		// Optionnel : affiche les zones de trigger
-		Gizmos.color = new Color(1f, 1f, 0f, 0.3f);
+		Gizmos.color = new Color(1, 1, 0, 0.3f);
 		Gizmos.DrawWireSphere(transform.position, bounceTriggerDistance);
-		Gizmos.color = new Color(0f, 1f, 0f, 0.3f);
+
+		Gizmos.color = new Color(0, 1, 0, 0.3f);
 		Gizmos.DrawWireSphere(transform.position, placementDistance);
 	}
 }
