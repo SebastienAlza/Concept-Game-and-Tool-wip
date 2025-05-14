@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sherlock_TalkMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: ch_sherlock01_mdl_coat
+    m_Weight: 0
+  - m_Path: ch_sherlock01_mdl_coat.002
+    m_Weight: 0
+  - m_Path: ch_sherlock01_mdl_Eyebrows
+    m_Weight: 0
+  - m_Path: ch_sherlock01_mdl_Eyes
+    m_Weight: 0
+  - m_Path: ch_sherlock01_mdl_Feets
+    m_Weight: 0
+  - m_Path: ch_sherlock01_mdl_Hairs
+    m_Weight: 0
+  - m_Path: ch_sherlock01_mdl_Hands
+    m_Weight: 0
+  - m_Path: ch_sherlock01_mdl_Hat
+    m_Weight: 0
+  - m_Path: ch_sherlock01_mdl_Head
+    m_Weight: 0
+  - m_Path: ch_sherlock01_mdl_HeadShadow
+    m_Weight: 0
+  - m_Path: ch_sherlock01_mdl_Legs
+    m_Weight: 0
+  - m_Path: ch_sherlock01_mdl_mustache
+    m_Weight: 0
+  - m_Path: rig_sherlock
+    m_Weight: 0
+  - m_Path: rig_sherlock/MCH-hat.parent
+    m_Weight: 0
+  - m_Path: rig_sherlock/MCH-hat.parent/hat
+    m_Weight: 0
+  - m_Path: rig_sherlock/MCH-hat.parent/hat/ORG-hat
+    m_Weight: 0
+  - m_Path: rig_sherlock/MCH-hat.parent/hat/ORG-hat/hat_back
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-coat_01.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-coat_01.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-coat_02.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-coat_02.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-coat_03.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-coat_03.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-coat_back
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-coat_front
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-col
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-f_index.01.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-f_index.01.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-f_index.02.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-f_index.02.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-f_ring.01.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-f_ring.01.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-f_ring.02.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-f_ring.02.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-foot.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-foot.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-forearm.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-forearm.L.001
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-forearm.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-forearm.R.001
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-hand.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-hand.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head
+    m_Weight: 1
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-hat
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-hat/DEF-hat-back
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-mask_face
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-moustache01.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-moustache01.L/DEF-moustache02.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-moustache01.L/DEF-moustache02.L/DEF-moustache03.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-moustache01.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-moustache01.R/DEF-moustache02.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-moustache01.R/DEF-moustache02.R/DEF-moustache03.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-nose01
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-nose01/DEF-nose02
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF-shadow_switch
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF_eyebrows
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF_eyebrows/DEF-Eyebrow.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-head/DEF_eyebrows/DEF-Eyebrow.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-neck
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-poncho_01.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-poncho_01.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-poncho_02.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-poncho_02.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-poncho_03.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-poncho_03.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-poncho_back
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-poncho_front
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-shin.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-shin.L.001
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-shin.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-shin.R.001
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-shoulder.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-shoulder.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-spine
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-spine.001
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-spine.002
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-thigh.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-thigh.L.001
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-thigh.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-thigh.R.001
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-thumb.01.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-thumb.01.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-thumb.02.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-thumb.02.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-toe.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-toe.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-upper_arm.L
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-upper_arm.L.001
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-upper_arm.R
+    m_Weight: 0
+  - m_Path: rig_sherlock/root_motion/DEF-upper_arm.R.001
+    m_Weight: 0

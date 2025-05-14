@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Emmett_TalkMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: ch_emmett02_mdl_Button
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_Coat
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_Eye_R
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_Eyes_L
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_hair_001
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_hair_002
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_hair_004
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_hair_0016
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_Hands
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_Hat
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_Head
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_Legs
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_Node
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_shoes
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-button
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-coat01.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-coat01.L.001
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-coat01.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-coat01.R.001
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-coat03.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-coat03.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-f_index.01.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-f_index.01.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-f_index.02.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-f_index.02.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-f_ring.01.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-f_ring.01.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-f_ring.02.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-f_ring.02.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-foot.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-foot.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-forearm.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-forearm.L.001
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-forearm.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-forearm.R.001
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-hand.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-hand.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-head
+    m_Weight: 1
+  - m_Path: ch_emmett02_rig/root_motion/DEF-head/DEF-eye.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-head/DEF-eye.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-head/DEF-hat
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-head/DEF-LeftHair
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-head/DEF-LeftMoustache
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-head/DEF-RightHair
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-head/DEF-RightMoustache
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-LeftBowtie
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-RightBowtie
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-shin.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-shin.L.001
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-shin.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-shin.R.001
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-shoulder.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-shoulder.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-spine.001
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-spine.002
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-spine.003
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-spine.004
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-thigh.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-thigh.L.001
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-thigh.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-thigh.R.001
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-thumb.01.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-thumb.01.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-thumb.02.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-thumb.02.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-thumb.03.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-thumb.03.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-toe.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-toe.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-upper_arm.L
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-upper_arm.L.001
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-upper_arm.R
+    m_Weight: 0
+  - m_Path: ch_emmett02_rig/root_motion/DEF-upper_arm.R.001
+    m_Weight: 0

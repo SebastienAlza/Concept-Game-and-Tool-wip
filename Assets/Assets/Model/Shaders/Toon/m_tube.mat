@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1776218494488102828
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: m_tube
+  m_Shader: {fileID: -6465566751694194690, guid: 9c1ca038acedf3245a6dc7f7949b829b,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_26d2897f477548d0958c34b0f797a12f_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_7d306c98ac724d5cbd2382848b851099_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a5ec101e45ff476abe118b6bd9ad143e_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 5b789ed2285bf6c4784c31985d62639f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: 5b789ed2285bf6c4784c31985d62639f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BubbleSize: 0
+    - _Epaisseur: 0.12
+    - _Float: 1
+    - _Level: 0.517
+    - _NoiseQuantity: 0.0211
+    - _NoiseScale: 20
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ThicknessSize: 0.116
+    m_Colors:
+    - _BubblesColor: {r: 0.5012593, g: 0.5943396, b: 0.13737096, a: 0}
+    - _BubblesColorA: {r: 0.7550198, g: 0.990566, b: 0.16353682, a: 0}
+    - _BubblesColorB: {r: 1, g: 0.42804718, b: 0.033018887, a: 0}
+    - _Color: {r: 0.19090423, g: 0.24528301, b: 0.23780163, a: 0}
+    - _LiquidColorA: {r: 0.6111938, g: 0.99215686, b: 0.3411765, a: 0}
+    - _LiquidColorB: {r: 1, g: 0.06132078, b: 0.854402, a: 0}
+    - _ReflectionColor: {r: 0.42372733, g: 0.4339623, b: 0.4298683, a: 0}
+    - _ThicknessColor: {r: 0.16251333, g: 0.41509432, b: 0.33549577, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

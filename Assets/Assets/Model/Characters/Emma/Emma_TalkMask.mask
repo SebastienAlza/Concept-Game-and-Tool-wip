@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Emma_TalkMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: ch_emma01_mdl_bag
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_Bigears
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_BigEyebrow
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_BigEyelid
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_BigEyes
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_BigHair_Poked
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_BigHead
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_dress
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_eyebrow
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_eyelid
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_eyes
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_hair
+    m_Weight: 0
+  - m_Path: ch_emma01_mdl_Head
+    m_Weight: 0
+  - m_Path: ch_emmett02_mdl_shoes
+    m_Weight: 0
+  - m_Path: rig_emma
+    m_Weight: 0
+  - m_Path: rig_emma/driver_bag
+    m_Weight: 0
+  - m_Path: rig_emma/driver_cord-sling-01
+    m_Weight: 0
+  - m_Path: rig_emma/driver_cord-sling-02
+    m_Weight: 0
+  - m_Path: rig_emma/driver_cord-sling-03
+    m_Weight: 0
+  - m_Path: rig_emma/driver_cord01
+    m_Weight: 0
+  - m_Path: rig_emma/driver_cord02
+    m_Weight: 0
+  - m_Path: rig_emma/driver_cord03
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-Bag
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-bag_cord_back
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-bag_cord_back_up
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-bag_cord_front_up
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-bag_cord_sling_01
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-bag_cord_sling_02
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-bag_cord_sling_03
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-bag_cord_sling_04
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-clip01
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-clip02
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_shin_back.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_shin_back.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_shin_front.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_shin_front.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_shin_middle.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_shin_middle.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_tight_back.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_tight_back.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_tight_front.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_tight_front.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_tight_middle.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-dress_tight_middle.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-f_index.01.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-f_index.01.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-f_index.02.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-f_index.02.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-f_ring.01.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-f_ring.01.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-f_ring.02.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-f_ring.02.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-foot.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-foot.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-forearm.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-forearm.L.001
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-forearm.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-forearm.R.001
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-hand.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-hand.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-head
+    m_Weight: 1
+  - m_Path: rig_emma/root_motion/DEF-head/DEF-shin.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-head/DEF-shin.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-head/DEF_eye_l
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-head/DEF_eye_r
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-head/DEF_eyebrow_l
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-head/DEF_eyebrow_r
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-head/DEF_eyelide_l
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-head/DEF_eyelide_r
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-head/switch_head
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-Lid01
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-Lid02
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-shoulder.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-shoulder.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-spine
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-spine.001
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-spine.002
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-spine.003
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-thigh.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-thigh.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-thumb.01.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-thumb.01.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-thumb.02.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-thumb.02.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-thumb.03.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-thumb.03.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-toe.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-toe.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-upper_arm.L
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-upper_arm.L.001
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-upper_arm.R
+    m_Weight: 0
+  - m_Path: rig_emma/root_motion/DEF-upper_arm.R.001
+    m_Weight: 0

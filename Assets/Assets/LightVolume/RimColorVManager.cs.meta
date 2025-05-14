@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Renderer/Scripts/EyeSystem/EyeSunManager.cs.meta
+guid: 69dbd20ac58ef214f91a76fb3085f8f3
+========
+guid: 0f51cec2095b2bb459217684b1d01d19
+>>>>>>>> origin/main:Assets/Renderer/Scripts/VolumeMasksManager.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

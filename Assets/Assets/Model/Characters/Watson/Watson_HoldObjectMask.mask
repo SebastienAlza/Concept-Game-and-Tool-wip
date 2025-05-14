@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Watson_HoldObjectMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: ch_watson01_mdl_Coat
+    m_Weight: 0
+  - m_Path: ch_watson01_mdl_Eyebrow.l
+    m_Weight: 0
+  - m_Path: ch_watson01_mdl_Eyebrow.r
+    m_Weight: 0
+  - m_Path: ch_watson01_mdl_Feets
+    m_Weight: 0
+  - m_Path: ch_watson01_mdl_Glasses
+    m_Weight: 0
+  - m_Path: ch_watson01_mdl_Hands
+    m_Weight: 0
+  - m_Path: ch_watson01_mdl_Hat
+    m_Weight: 0
+  - m_Path: ch_watson01_mdl_Head
+    m_Weight: 0
+  - m_Path: ch_watson01_mdl_Legs
+    m_Weight: 0
+  - m_Path: ch_watson01_mdl_Mustache
+    m_Weight: 0
+  - m_Path: ch_watson01_rig
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-f_index.01.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-f_index.01.R
+    m_Weight: 1
+  - m_Path: ch_watson01_rig/Root-motion/DEF-f_index.02.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-f_index.02.R
+    m_Weight: 1
+  - m_Path: ch_watson01_rig/Root-motion/DEF-f_ring.01.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-f_ring.01.R
+    m_Weight: 1
+  - m_Path: ch_watson01_rig/Root-motion/DEF-f_ring.02.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-f_ring.02.R
+    m_Weight: 1
+  - m_Path: ch_watson01_rig/Root-motion/DEF-foot.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-foot.R
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-forearm.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-forearm.L.001
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-forearm.R
+    m_Weight: 1
+  - m_Path: ch_watson01_rig/Root-motion/DEF-forearm.R.001
+    m_Weight: 1
+  - m_Path: ch_watson01_rig/Root-motion/DEF-hand.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-hand.R
+    m_Weight: 1
+  - m_Path: ch_watson01_rig/Root-motion/DEF-head
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-head/DEF-eyebrow.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-head/DEF-eyebrow.R
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-head/DEF-glasses
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-head/DEF-hat
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-pocket.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-pocket.R
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-shin.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-shin.L.001
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-shin.R
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-shin.R.001
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-shoulder.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-shoulder.R
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-spine
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-spine.001
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-spine.002
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-spine.003
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-tail01
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-tail02
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-thigh.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-thigh.L.001
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-thigh.R
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-thigh.R.001
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-thumb.01.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-thumb.01.R
+    m_Weight: 1
+  - m_Path: ch_watson01_rig/Root-motion/DEF-thumb.02.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-thumb.02.R
+    m_Weight: 1
+  - m_Path: ch_watson01_rig/Root-motion/DEF-toe.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-toe.R
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-upper_arm.L
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-upper_arm.L.001
+    m_Weight: 0
+  - m_Path: ch_watson01_rig/Root-motion/DEF-upper_arm.R
+    m_Weight: 1
+  - m_Path: ch_watson01_rig/Root-motion/DEF-upper_arm.R.001
+    m_Weight: 1
