@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1914901148063242761
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 9
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -20,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: m_8bits
-  m_Shader: {fileID: -6465566751694194690, guid: 7575675f5096de34d98d119b685433ad, type: 3}
+  m_Name: m_cartoon
+  m_Shader: {fileID: -6465566751694194690, guid: 39d2007301f675244bc3b682fa2968fd, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -37,12 +24,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _SampleTexture2D_76b5c79571064506973c1cc418f09a41_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 15f7af0500d526341840a496c041a33c, type: 3}
+    - _SampleTexture2D_11b1356a27fb40d28beee54386a06298_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 2ab1dec8b4bb4da42b2b680e7018dcd7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _rt_8bits:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8400000, guid: cb0f0ea6e56f8a94b958b3ac4efecdc3, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -62,7 +49,22 @@ Material:
     - _Boolean: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SizeCell: -0.13
-    m_Colors: []
+    - _SizeCell: 0.1
+    - _radiusDisolve: 1
+    m_Colors:
+    - _wposDisolve: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
+--- !u!114 &6211369772204540191
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9
