@@ -10,15 +10,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Dungeon
+  - Dungeon_8bits
   - Water
   - UI
-  - character
+  - character_8bits
+  - Forest_8bits
   - 
-  - 
-  - 
-  - 
-  - 
+  - character_Cartoon
+  - Dungeon_Cartoon
+  - Forest_Cartoon
   - 
   - 
   - 
@@ -49,6 +49,6 @@ TagManager:
   - Outline_2
   - Outline_3
   - Outline_4
-  - Light Layer 5
-  - Light Layer 6
+  - 8Bits
+  - Cartoon
   - Light Layer 7
