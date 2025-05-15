@@ -8,22 +8,33 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: m_cartoon
-  m_Shader: {fileID: -6465566751694194690, guid: 39d2007301f675244bc3b682fa2968fd, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 2753d56cee62e1e4c815b7d92a3a0328, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _SPECULAR_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses:
   - MOTIONVECTORS
+  - SHADOWCASTER
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RampTexture:
+        m_Texture: {fileID: 2800000, guid: a1a4108227a8a8b4f9067f80f37c33ec, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_11b1356a27fb40d28beee54386a06298_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: 2ab1dec8b4bb4da42b2b680e7018dcd7, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -46,12 +57,28 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaClip: 0
+    - _AlphaClipThreshold: -0.16
+    - _AlphaToMask: 0
+    - _Blend: 0
     - _Boolean: 0
+    - _CastShadows: 0
+    - _Cull: 2
+    - _DstBlend: 0
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _SPECULAR: 1
     - _SizeCell: 0.1
+    - _Smoothness: 0.4
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _ZTest: 4
+    - _ZWrite: 1
+    - _ZWriteControl: 0
     - _radiusDisolve: 1
     m_Colors:
+    - _DiffuseColor: {r: 1, g: 1, b: 1, a: 0}
+    - _SpecularColour: {r: 1, g: 1, b: 1, a: 0}
     - _wposDisolve: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

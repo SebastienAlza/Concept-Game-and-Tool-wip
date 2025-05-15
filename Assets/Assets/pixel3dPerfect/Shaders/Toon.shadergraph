@@ -84,6 +84,9 @@
         },
         {
             "m_Id": "a8d2931f2c824f49b8e88c8f9033e4d3"
+        },
+        {
+            "m_Id": "8c90d988e25f4776a787d9c4b115630d"
         }
     ],
     "m_GroupDatas": [
@@ -229,13 +232,27 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "a8d2931f2c824f49b8e88c8f9033e4d3"
+                    "m_Id": "8c90d988e25f4776a787d9c4b115630d"
                 },
                 "m_SlotId": 1
             },
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "bdc77262d5d442ef9f6ee65a82e052ca"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "a8d2931f2c824f49b8e88c8f9033e4d3"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "8c90d988e25f4776a787d9c4b115630d"
                 },
                 "m_SlotId": 0
             }
@@ -404,7 +421,7 @@
     "m_ObjectId": "097f9f8a1b984454978b5bbc64570946",
     "m_Title": "Ramp Texture",
     "m_Position": {
-        "x": -276.2265625,
+        "x": -276.2264404296875,
         "y": 125.8868408203125
     }
 }
@@ -661,6 +678,30 @@
     },
     "m_Property": {
         "m_Id": "b981eb4aa7020081b6a3db0f9518a483"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "41a2862f83154ec9942d6d1487fc5d21",
+    "m_Id": 1,
+    "m_DisplayName": "",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
     }
 }
 
@@ -1018,8 +1059,8 @@
     "m_ObjectId": "7c88845d502b4085af23e7952f3f7522",
     "m_Title": "Albedo",
     "m_Position": {
-        "x": -271.698486328125,
-        "y": 187.4716796875
+        "x": -271.6981506347656,
+        "y": 187.47174072265626
     }
 }
 
@@ -1081,6 +1122,42 @@
     "m_ShaderOutputName": "Out",
     "m_StageCapability": 3,
     "m_BareResource": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.RedirectNodeData",
+    "m_ObjectId": "8c90d988e25f4776a787d9c4b115630d",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Redirect Node",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 2197.13232421875,
+            "y": 197.43399047851563,
+            "width": 56.151123046875,
+            "height": 23.547149658203126
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "cc1badc29ba4425ba21500eccf3cbad8"
+        },
+        {
+            "m_Id": "41a2862f83154ec9942d6d1487fc5d21"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    }
 }
 
 {
@@ -1594,6 +1671,30 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "cc1badc29ba4425ba21500eccf3cbad8",
+    "m_Id": 0,
+    "m_DisplayName": "",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "ce63c31f61954d29a62d41b3ffd3f9df",
     "m_Id": 2,
@@ -1647,8 +1748,8 @@
     "m_ObjectId": "d05ee2f3810f446fbabf30a5e25a65d5",
     "m_Title": "Additional Lights (Toon)",
     "m_Position": {
-        "x": -255.396240234375,
-        "y": 48.905643463134769
+        "x": -255.39627075195313,
+        "y": 48.90570068359375
     }
 }
 
@@ -1724,8 +1825,8 @@
     "m_ObjectId": "e55cb56e639245c4b510115fc4273ac8",
     "m_Title": "Specular Colour",
     "m_Position": {
-        "x": -276.2265625,
-        "y": -53.4339599609375
+        "x": -276.2264404296875,
+        "y": -53.43391799926758
     }
 }
 

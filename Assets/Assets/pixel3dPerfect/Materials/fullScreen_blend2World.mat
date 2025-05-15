@@ -57,11 +57,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Disolve_Noise_Pixel_Scale: 0.04
-    - _Disolve_Noise_Scale: 53.7
-    - _Float: 0.37
-    - _Float_1: 128
-    - _Palette_ID: 2.11
+    - _Disolve_Noise_Pixel_Scale: 0.22
+    - _Disolve_Noise_Scale: 86.95
+    - _Float: 0.2
+    - _Float_1: 26.5
+    - _Palette_ID: 1.75
     m_Colors:
     - _Color: {r: 0, g: 4.238596, b: 19.468573, a: 0}
     - _Vector2: {r: 0, g: 0.08, b: 0, a: 0}
