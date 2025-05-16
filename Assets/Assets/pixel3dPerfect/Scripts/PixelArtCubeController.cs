@@ -11,37 +11,52 @@ public class DebugPixel3DController : MonoBehaviour
 
 	private CharacterController cc;
 
+	private Vector3 internalPosition;
+
 	void Start()
 	{
 		cc = GetComponent<CharacterController>();
+		internalPosition = transform.position;
 		if (!pixelCamera)
 			Debug.LogWarning("Assigne PixelPerfectCameraController à ce personnage.");
 	}
 
+	[Header("Smoothing")]
+	public float moveSmoothTime = 0.1f;
+	private Vector3 currentDir = Vector3.zero;
+	private Vector3 dirVelocity = Vector3.zero;
+
 	void Update()
 	{
-		int dx = 0, dz = 0;
-		if (Input.GetKey(KeyCode.A)) dx = -1;
-		if (Input.GetKey(KeyCode.D)) dx = +1;
-		if (Input.GetKey(KeyCode.W)) dz = +1;
-		if (Input.GetKey(KeyCode.S)) dz = -1;
+		// 1) Input + lissage
+		Vector3 targetDir = new Vector3(
+			Input.GetAxisRaw("Horizontal"),
+			0f,
+			Input.GetAxisRaw("Vertical")
+		).normalized;
 
-		Vector3 moveDir = new Vector3(dx, 0f, dz).normalized;
+		currentDir = Vector3.SmoothDamp(currentDir, targetDir, ref dirVelocity, moveSmoothTime);
 
-		if (moveDir != Vector3.zero)
+		// 2) Calcul de la nouvelle internalPosition
+		Vector3 move = currentDir * moveSpeed * Time.deltaTime;
+		internalPosition += move;
+
+		// 3) Rotation lissée
+		if (currentDir.sqrMagnitude > 0.001f)
 		{
-			Vector3 move = moveDir * moveSpeed * Time.deltaTime;
-			Vector3 targetPos = transform.position + move;
-
-			// Snap visuel en XZ (respecte Y réel)
-			if (pixelCamera != null)
-				targetPos = pixelCamera.SnapWorldXZToPixelGrid(targetPos);
-
-			Vector3 delta = targetPos - transform.position;
-			cc.Move(delta);
-
-			transform.rotation = Quaternion.LookRotation(moveDir);
+			Quaternion targetRot = Quaternion.LookRotation(currentDir);
+			transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, 10f * Time.deltaTime);
 		}
+
+		// 4) Snap pour affichage    
+		Vector3 displayPos = internalPosition;
+		if (pixelCamera != null)
+			displayPos = pixelCamera.SnapWorldXZToPixelGrid(displayPos);
+
+		// 5) Appliquer au CharacterController
+		Vector3 delta = displayPos - transform.position;
+		cc.Move(delta);
 	}
+
 
 }
