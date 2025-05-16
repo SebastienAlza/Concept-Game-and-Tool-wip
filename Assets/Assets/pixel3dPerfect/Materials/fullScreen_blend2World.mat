@@ -64,10 +64,12 @@ Material:
     - _Palette_ID: 1.75
     - _Scale_uv_Cartoon_Screen: 2.61
     - _fade: 0
+    - _saturation: 0.8
     - _scaleUVCartoon: 4
     m_Colors:
     - _Color: {r: 0, g: 4.238596, b: 19.468573, a: 0}
-    - _Color_8_bits: {r: 6, g: 8.37, b: 9.9, a: 0}
+    - _Color_1: {r: 0.18980388, g: 0.09803922, b: 0.3019608, a: 1}
+    - _Color_8_bits: {r: 8, g: 8, b: 3.3, a: 0}
     - _Vector2: {r: 0, g: 0.08, b: 0, a: 0}
     - _Vector3: {r: 9.7, g: 9.03, b: 0.25, a: 0}
   m_BuildTextureStacks: []
