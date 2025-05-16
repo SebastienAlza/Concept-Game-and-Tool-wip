@@ -5,50 +5,58 @@ public class DebugPixel3DController : MonoBehaviour
 {
 	[Header("Mouvement")]
 	public float moveSpeed = 3f;
-	public Camera pixelCam;                         // votre caméra orthographique
-	public PixelPerfect3DCamera ppCam;              // référence au script PixelPerfect3DCamera
 
-	CharacterController cc;
+	[Header("Lien pixel-perfect")]
+	public PixelPerfectCameraController pixelCamera; // Assigne ton contrôleur ici
+
+	private CharacterController cc;
+
+	private Vector3 internalPosition;
 
 	void Start()
 	{
 		cc = GetComponent<CharacterController>();
-		if (!pixelCam || !ppCam)
-			Debug.LogWarning("Assignez pixelCam et ppCam dans l'Inspector !");
+		internalPosition = transform.position;
+		if (!pixelCamera)
+			Debug.LogWarning("Assigne PixelPerfectCameraController à ce personnage.");
 	}
 
-void Update()
-{
-    int dx = 0, dz = 0;
-		if (Input.GetKey(KeyCode.A)) dx = -1;
-		if (Input.GetKey(KeyCode.D)) dx = +1;
-		if (Input.GetKey(KeyCode.W)) dz = +1;
-		if (Input.GetKey(KeyCode.S)) dz = -1;
+	[Header("Smoothing")]
+	public float moveSmoothTime = 0.1f;
+	private Vector3 currentDir = Vector3.zero;
+	private Vector3 dirVelocity = Vector3.zero;
 
-		Vector3 move = new Vector3(dx, 0, dz) * moveSpeed;
-    cc.Move(move * Time.deltaTime);
+	void Update()
+	{
+		// 1) Input + lissage
+		Vector3 targetDir = new Vector3(
+			Input.GetAxisRaw("Horizontal"),
+			0f,
+			Input.GetAxisRaw("Vertical")
+		).normalized;
 
-    // rotation vers la direction
-    if (dx != 0 || dz != 0)
-        transform.rotation = Quaternion.LookRotation(new Vector3(dx, 0, dz));
+		currentDir = Vector3.SmoothDamp(currentDir, targetDir, ref dirVelocity, moveSmoothTime);
 
-        // snap ultra-simple
-        if (ppCam)
-        {
-            transform.position = PixelSnap(transform.position);
-        }
-        else
-        {
-            transform.position = transform.position;
+		// 2) Calcul de la nouvelle internalPosition
+		Vector3 move = currentDir * moveSpeed * Time.deltaTime;
+		internalPosition += move;
 
+		// 3) Rotation lissée
+		if (currentDir.sqrMagnitude > 0.001f)
+		{
+			Quaternion targetRot = Quaternion.LookRotation(currentDir);
+			transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, 10f * Time.deltaTime);
 		}
-}
 
-Vector3 PixelSnap(Vector3 worldPos)
-{
-    float up = 1f / ppCam.zoom;
-    worldPos.x = Mathf.Round(worldPos.x * ppCam.zoom) / ppCam.zoom;
-    worldPos.z = Mathf.Round(worldPos.z * ppCam.zoom) / ppCam.zoom;
-    return worldPos;
-}
+		// 4) Snap pour affichage    
+		Vector3 displayPos = internalPosition;
+		if (pixelCamera != null)
+			displayPos = pixelCamera.SnapWorldXZToPixelGrid(displayPos);
+
+		// 5) Appliquer au CharacterController
+		Vector3 delta = displayPos - transform.position;
+		cc.Move(delta);
+	}
+
+
 }
