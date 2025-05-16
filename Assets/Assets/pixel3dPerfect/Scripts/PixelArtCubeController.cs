@@ -9,9 +9,18 @@ public class DebugPixel3DController : MonoBehaviour
 	[Header("Lien pixel-perfect")]
 	public PixelPerfectCameraController pixelCamera; // Assigne ton contrôleur ici
 
-	private CharacterController cc;
+	[Header("Animation")]
+	[Tooltip("Animator contenant les états Idle et Walk")]
+	public Animator[] animators;
+	private static readonly int IsWalkingHash = Animator.StringToHash("isWalking");
 
+	private CharacterController cc;
 	private Vector3 internalPosition;
+
+	[Header("Smoothing")]
+	public float moveSmoothTime = 0.1f;
+	private Vector3 currentDir = Vector3.zero;
+	private Vector3 dirVelocity = Vector3.zero;
 
 	void Start()
 	{
@@ -19,16 +28,13 @@ public class DebugPixel3DController : MonoBehaviour
 		internalPosition = transform.position;
 		if (!pixelCamera)
 			Debug.LogWarning("Assigne PixelPerfectCameraController à ce personnage.");
+		if (animators == null)
+			Debug.LogWarning("Assigne un Animator avec les bools 'isWalking'.");
 	}
-
-	[Header("Smoothing")]
-	public float moveSmoothTime = 0.1f;
-	private Vector3 currentDir = Vector3.zero;
-	private Vector3 dirVelocity = Vector3.zero;
 
 	void Update()
 	{
-		// 1) Input + lissage
+		// 1) Lecture de l'input et lissage de la direction
 		Vector3 targetDir = new Vector3(
 			Input.GetAxisRaw("Horizontal"),
 			0f,
@@ -37,7 +43,7 @@ public class DebugPixel3DController : MonoBehaviour
 
 		currentDir = Vector3.SmoothDamp(currentDir, targetDir, ref dirVelocity, moveSmoothTime);
 
-		// 2) Calcul de la nouvelle internalPosition
+		// 2) Calcul de la nouvelle position interne (float)
 		Vector3 move = currentDir * moveSpeed * Time.deltaTime;
 		internalPosition += move;
 
@@ -48,15 +54,20 @@ public class DebugPixel3DController : MonoBehaviour
 			transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, 10f * Time.deltaTime);
 		}
 
-		// 4) Snap pour affichage    
+		// 4) Application du snap pour affichage pixel-perfect
 		Vector3 displayPos = internalPosition;
 		if (pixelCamera != null)
 			displayPos = pixelCamera.SnapWorldXZToPixelGrid(displayPos);
 
-		// 5) Appliquer au CharacterController
 		Vector3 delta = displayPos - transform.position;
 		cc.Move(delta);
+
+		// 5) Mise à jour de l'Animator
+		if (animators != null)
+		{
+			bool isWalking = currentDir.sqrMagnitude > 0.001f;
+			foreach(Animator animator in animators)
+			animator.SetBool(IsWalkingHash, isWalking);
+		}
 	}
-
-
 }
